@@ -47,8 +47,8 @@
       </div>
       
       <div class="flex items-center gap-8 text-sm font-medium">
-        <a href="#" class="hover:text-cyan-600 transition">Technology</a>
-        <a href="#" class="hover:text-cyan-600 transition">Token</a>
+        <a href="#technology" class="hover:text-cyan-600 transition">Technology</a>
+        <a href="#token" class="hover:text-cyan-600 transition">Token</a>
       </div>
     </div>
   </nav>
@@ -79,9 +79,43 @@
       </div>
     </div>
 
-    <div class="absolute bottom-10 left-1/2 flex flex-col items-center">
-      <div class="text-xs tracking-widest text-zinc-400 mb-2">SCROLL TO EXPLORE</div>
-      <i class="fa-solid fa-chevron-down animate-bounce text-cyan-600"></i>
+    <div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center">
+      <div class="text-xs tracking-[2px] text-zinc-400 mb-3 font-medium">
+        SCROLL TO EXPLORE
+      </div>
+      <i class="fa-solid fa-chevron-down animate-bounce text-cyan-600 text-xl"></i>
+    </div>
+  </section>
+
+  <!-- Technology -->
+  <section id="technology" class="py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="title-font text-5xl font-bold mb-4">Technology Stack</h2>
+        <p class="text-xl text-zinc-600">Enterprise-grade infrastructure built for scale and privacy</p>
+      </div>
+
+      <div class="bg-zinc-50 border border-zinc-100 rounded-3xl p-10 md:p-16">
+        <div class="prose prose-zinc max-w-none text-lg leading-relaxed">
+          <p class="text-zinc-700">
+            <strong>6 smart contracts on Base.</strong> Enterprise-grade backend.
+          </p>
+          <p class="text-zinc-700 mt-6">
+            Express 5 + tRPC 11 for type-safe APIs<br>
+            PostgreSQL + TimescaleDB for job history<br>
+            Redis for real-time feeds<br>
+            Circom 2.0 + Groth16 for ZK proof generation<br>
+            Claude API powering the <span class="font-semibold">CROTA Guide AI</span>
+          </p>
+        </div>
+
+        <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+          <div class="bg-white p-4 rounded-2xl border border-zinc-100">Base</div>
+          <div class="bg-white p-4 rounded-2xl border border-zinc-100">ZK (Circom + Groth16)</div>
+          <div class="bg-white p-4 rounded-2xl border border-zinc-100">tRPC + Express</div>
+          <div class="bg-white p-4 rounded-2xl border border-zinc-100">PostgreSQL + Redis</div>
+        </div>
+      </div>
     </div>
   </section>
 
