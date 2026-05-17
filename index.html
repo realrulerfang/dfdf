@@ -45,7 +45,19 @@
           <i class="fa-brands fa-x-twitter"></i>
         </a>
       </div>
-      
+
+      <!-- Token Address -->
+      <div class="flex items-center gap-3 bg-zinc-100 rounded-2xl px-4 py-2 text-sm">
+        <span class="text-zinc-500 font-mono">$CRT</span>
+        <span class="font-mono text-zinc-700 select-all" id="token-address">
+          0x99aac24DF707Dd5C16300F1Adcefe7e9FBCF0B07
+        </span>
+        <button onclick="copyAddress()" 
+                class="text-cyan-600 hover:text-cyan-700 transition">
+          <i class="fa-solid fa-copy"></i>
+        </button>
+      </div>
+
       <div class="flex items-center gap-8 text-sm font-medium">
         <a href="#technology" class="hover:text-cyan-600 transition">Technology</a>
         <a href="#token" class="hover:text-cyan-600 transition">Token</a>
@@ -202,6 +214,18 @@
   </footer>
 
   <script>
+    function copyAddress() {
+      const address = "0x99aac24DF707Dd5C16300F1Adcefe7e9FBCF0B07";
+      navigator.clipboard.writeText(address).then(() => {
+        const btn = event.currentTarget;
+        const original = btn.innerHTML;
+        btn.innerHTML = '<i class="fa-solid fa-check text-green-500"></i>';
+        setTimeout(() => {
+          btn.innerHTML = original;
+        }, 2000);
+      });
+    }
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         if (this.getAttribute('href') === '#') return;
