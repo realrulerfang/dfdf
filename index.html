@@ -130,43 +130,51 @@
 
   <!-- Token -->
   <section id="token" class="py-24 bg-zinc-50">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="grid md:grid-cols-2 gap-16 items-center">
-        <div>
-          <h2 class="title-font text-6xl font-bold mb-6">$CRT — Utility Token</h2>
-          <div class="space-y-6 text-lg text-zinc-600">
-            <div class="flex gap-4">
-              <div class="text-cyan-600 font-semibold">01</div>
-              <div>Staking for governance and rewards</div>
-            </div>
-            <div class="flex gap-4">
-              <div class="text-cyan-600 font-semibold">02</div>
-              <div>Payment for services within the ecosystem</div>
-            </div>
-            <div class="flex gap-4">
-              <div class="text-cyan-600 font-semibold">03</div>
-              <div>Access to premium ZK modules</div>
-            </div>
-            <div class="flex gap-4">
-              <div class="text-cyan-600 font-semibold">04</div>
-              <div>Burn mechanism on protocol usage</div>
-            </div>
-          </div>
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="title-font text-6xl font-bold mb-12">$CRT — Utility Token</h2>
+      
+      <div class="max-w-2xl mx-auto space-y-8 text-left">
+        <div class="flex gap-6 items-start">
+          <div class="text-cyan-600 font-semibold text-2xl w-10">01</div>
+          <div class="text-zinc-600 text-xl">Staking for governance and rewards</div>
         </div>
+        <div class="flex gap-6 items-start">
+          <div class="text-cyan-600 font-semibold text-2xl w-10">02</div>
+          <div class="text-zinc-600 text-xl">Payment for services within the ecosystem</div>
+        </div>
+        <div class="flex gap-6 items-start">
+          <div class="text-cyan-600 font-semibold text-2xl w-10">03</div>
+          <div class="text-zinc-600 text-xl">Access to premium ZK modules</div>
+        </div>
+        <div class="flex gap-6 items-start">
+          <div class="text-cyan-600 font-semibold text-2xl w-10">04</div>
+          <div class="text-zinc-600 text-xl">Burn mechanism on protocol usage</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="bg-white border border-zinc-200 rounded-3xl p-12 shadow-sm">
-          <div class="text-center">
-            <div class="text-8xl font-mono font-bold text-cyan-600 mb-2">$CRT</div>
-            <div class="text-2xl mb-8 text-zinc-700">Crotafi Token</div>
-            
-            <div class="grid grid-cols-2 gap-8 text-left">
-              <div>
-                <div class="text-zinc-500 text-sm">Network</div>
-                <div class="text-4xl font-mono font-semibold">Base</div>
-              </div>
-              <div>
-                <div class="text-zinc-500 text-sm">Total Supply</div>
-                <div class="text-5xl font-mono font-semibold">100B</div>
-              </div>
-            </div>
-          </div
+  <!-- Footer -->
+  <footer class="bg-zinc-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <div class="flex justify-center mb-8">
+        <img src="logo.jpg" alt="Crotafi" class="w-12 h-12">
+      </div>
+      <p class="text-zinc-400">© 2026 Crotafi. All Rights Reserved.</p>
+      <p class="text-xs text-zinc-500 mt-4">On-chain identity is the future.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        if (this.getAttribute('href') === '#') return;
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
